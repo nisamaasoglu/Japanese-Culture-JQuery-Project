@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+
+            <h1>JQUERY FADEOUT(), FADEIN(), FADETOGGLE(), FADETO() METODLARI VE KULLANIMLARI</h1>
+            <p>Bu yazımızda jQuery’de <b>fadeOut, fadeIn, fadeToggle</b> ve <b>fadeto</b> metodları ile Html öğelerini efektif bir şekilde nasıl gizleyebilir ve tekrar nasıl görünür hale getirebiliriz onu öğreneceğiz.</p>
+            <p>Şimdi sırasıyla bu metodların ne işe yaradığını ve nasıl kullanıldığını inceleyelim.
+
+            </p> 
+            <p>Daha sonra da tüm metodları aynı anda içeren bir uygulama yapalım. Böylece metodların birbirinden farkını daha iyi anlayabiliriz.
+
+            </p>
+            <h2>JQUERY FADEOUT() METODU
+            </h2>
+            <p><b>fadeOut() metodu</b>: fadeOut() metodu ile seçtiğimiz Html öğesini efektif bir şekilde gizleyebiliriz. 3 farklı kullanım şekli vardır:
+
+            </p>
+            <p>  <b style="background-color: blue; color: white;">1 -</b>  Herhangi bir parametre vermeden yani <b>fadeOut()</b> şeklinde kullanırsak bu metodu uyguladığımız Html öğesi efektif bir şekilde gizlenir.
+
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/PoLbXGg?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/PoLbXGg">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p> <b style="background-color: blue; color: white;">2 -</b>  <b>Milisaniye</b> türünden parametre verebiliriz. Örneğin Html öğesinin gizlenme süresinin <b>3 saniyede</b> gerçekleşmesini istiyorsak parametre olarak <b>3000</b> değeri vermeliyiz.
+
+            </p> 
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/NWJbebW?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/NWJbebW">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>  <b style="background-color: blue; color: white;">3 -</b>   Son olarak rakamsal değer vermek yerine <b> “slow”, “normal”, “fast”</b> parametrelerinden birini vererek efektlerimizi yavaş, normal veya hızlı bir şekilde gerçekleştirebiliriz.
+
+            </p>
+            <p>Örneğin yavaş bir efekt vermek istiyorsak:
+        
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/KKENbNV?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/KKENbNV">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+              <h2>JQUERY FADEIN() METODU
+            </h2>
+            <p><b>fadeIn() metodu</b>: fadeIn() metodu ile gizlenmiş bir Html öğesini efektif bir şekilde tekrardan görünür hale getirebiliriz. 3 farklı kullanım şekli vardır:
+
+            </p>
+            <p> <b style="background-color: blue; color: white;">1 -</b>  Herhangi bir parametre vermeden yani <b>fadeIn()</b> şeklinde kullanırsak bu metodu uyguladığımız Html öğesi efektif bir şekilde görünür hale gelir.
+
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/dyrOwOK?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/dyrOwOK">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p> <b style="background-color: blue; color: white;">2 -</b>  <b>Milisaniye</b> türünden parametre verebiliriz. Örneğin Html öğesinin gizlenme süresinin <b>3 saniyede</b> gerçekleşmesini istiyorsak parametre olarak <b>3000</b> değeri vermeliyiz.
+
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/WNmoLRb?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/WNmoLRb">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p> <b style="background-color: blue; color: white;">3 -</b>   Son olarak rakamsal değer vermek yerine <b> “slow”, “normal”, “fast”</b> parametrelerinden birini vererek efektlerimizi yavaş, normal veya hızlı bir şekilde gerçekleştirebiliriz.
+
+            </p>
+            <p>Örneğin yavaş bir efekt vermek istiyorsak:
+          
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/ExMNGZv?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/ExMNGZv">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <h2>JQUERY FADETOGGLE() METODU
+            </h2>
+            <p><b>fadeToggle() metodu</b>: fadeToggle() metodu ile bir Html öğesini görünür durumdaysa gizleyebilir, gizli durumdaysa görünür hale getirebiliriz. Yani <b>Gizle-Göster, Göster-Gizle</b> işlevi görür. 3 farklı kullanım şekli vardır:
+
+            </p>
+            <p>  <b style="background-color: blue; color: white;">1 -</b>  Herhangi bir parametre vermeden yani <b>fadeToggle()</b> şeklinde kullanırsak bu metodu uyguladığımız Html öğesi efektif bir şekilde gizlenir veya görünür hale gelir.
+
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/dyrOwNK?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/dyrOwNK">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p> <b style="background-color: blue; color: white;">2 -</b> <b>Milisaniye</b> türünden parametre verebiliriz. Örneğin Html öğesinin gizlenme süresinin <b>3 saniyede</b> gerçekleşmesini istiyorsak parametre olarak <b>3000</b> değeri vermeliyiz.
+
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/gOELZgE?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/gOELZgE">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p> <b style="background-color: blue; color: white;">3 -</b>  Son olarak rakamsal değer vermek yerine <b> “slow”, “normal”, “fast”</b> parametrelerinden birini vererek efektlerimizi yavaş, normal veya hızlı bir şekilde gerçekleştirebiliriz.
+
+            </p>
+            <p>Örneğin yavaş bir efekt vermek istiyorsak:
+            
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/wvOoRgV?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/wvOoRgV">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <h2>JQUERY FADETO() METODU
+            </h2>
+            <p><b>fadeTo() metodu</b>: fadeTo() metodu ikinci bir parametre olarak 0 ile 1 arasında bir değer alır. Bu değer ile Html öğesine opacity yani şeffaflık özelliği uygulanır. Bir Html öğesinin opacity değeri 1’den 0’a doğru azaldıkça görünürlüğüde azalır. 2 farklı kullanım şekli vardır:
+
+            </p>
+            <p> <b style="background-color: blue; color: white;">1 -</b>  Birinci parametre olarak <b>milisaniye</b> türünden değer verebiliriz. Örneğin Html öğesinin gizlenmesinin veya görünür hale gelmesinin <b>3 saniyede</b> gerçekleşmesini istiyorsak parametre olarak <b>3000</b> değeri vermeliyiz. İkinci parametre olarakta <b>opacity</b> değeri veriyoruz.
+
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/KKENbWV?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/KKENbWV">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p><b style="background-color: blue; color: white;">2 -</b>  Birinci parametrede rakamsal değer vermek yerine <b>“slow”, “normal”, “fast”</b> parametrelerinden birini vererek efektlerimizi yavaş, normal veya hızlı bir şekilde gerçekleştirebiliriz. İkinci parametre olarakta opacity değeri veriyoruz.
+
+            </p>
+            <p>Örneğin yavaş bir efekt vermek istiyorsak:
+
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/MWxbZpb?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/MWxbZpb">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>Gördüğünüz gibi <b>fadeTo()</b> metodunun diğerlerinden farkı, hız parametresi verildikten sonra birde <b>opacity değeri</b> veriyoruz. Böylece uyguladığımız Html öğesinin şeffaflık değeri verdiğimiz değere kadar azalmış oluyor.
+
+            </p>
+            <p>Artık bu metodları içerisinde barındıran uygulamamıza geçebiliriz.
+
+            </p>
+            <b>Html Kodları</b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/LYabMRd?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/LYabMRd">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <b>CSS Kodları</b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/vYPyvXV?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/vYPyvXV">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <b>jQuery Kodları
+
+            </b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/wvOoQJx?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/wvOoQJx">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>Gördüğünüz gibi fadeOut, fadeIn, fadeToggle ve fadeTo metodlarını 3 farklı şekilde kullandık. Aşağıdaki uygulama üzerinde butonlara tıklayarak efektleri inceleyebilirsiniz.
+
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/XWGNyRJ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/XWGNyRJ">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <b>Son olarak şunu söylemek istiyorum:
+
+            </b>
+            <p>Bu metodların arka planda neler yaptığını bilmemizde de fayda var.
+
+            </p>
+            <p>Burada <b>div</b> etiketi gizlendiğinde tarayıcıda sağ tıklayıp incele derseniz, div’in <b>display değerinin</b> none olarak değiştiğini görebilirsiniz.
+
+            </p>
+            <p>Aynı şekilde <b>fadeTo</b> metodu ile opacity değerini değiştirdiğimiz takdirde div’in <b>opacity</b> değerinin değiştiğini görebilirsiniz.
+
+            </p>
+            <p><b> ⇒  Div Gizli Hale Geldiğinde
+
+            </b></p>
+            <img src="resimler/jquery-efektleri-display-none (1).jpg" alt="">
+        </p>
+        <p><b> ⇒  Div’in opacity Değeri Değiştiğinde
+
+        </b></p>
+        <img src="resimler/jquery-efektleri-opacity.jpg" alt="">
+        <br><br>
+        <p>
+            Umarım <b>“jQuery fadeOut(), fadeIn(), fadeToggle(), fadeTo() Metodları ve Kullanımları”</b> başlıklı yazım sizin için faydalı olmuştur.
+        </p>
+        <p>Şu yazılar da ilginizi çekebilir.
+
+        </p>
+        <p><b><a href="konu_8.html">jQuery hide(), show(), toggle() Metodları ve Kullanımları</a></b></p>
+        <p><b><a href="konu_10.html">jQuery slideDown(), slideUp(), slideToggle() Metodları ve Kullanımları</a></b></p>
+        <p>Yeni bir yazımızda görüşmek üzere.
+
+        </p>
+
+
+
+
+
+   
+            
+
+          
+
+
+
+        </div>
+</body>
+</html>

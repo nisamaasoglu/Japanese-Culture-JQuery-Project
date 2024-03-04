@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+
+
+                    
+           <h1>JQUERY ANİMATE(), STOP() METODLARI VE KULLANIMLARI</h1>
+           <p>Bu yazımızda jQuery kullanarak animasyonları nasıl yapabileceğimizi anlatacağım. jQuery ile animasyonları yapabilmek için <b>animate()</b> metodunu kullanıyoruz.
+
+           </p>
+           <h2>ANİMATE() METODU VE KULLANIMI
+           </h2>
+           <p>jQuery’de <b>animate()</b> metodunun kullanımı şu şekilde:
+
+           </p>
+           <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/VwRmqzE?default-tab=html%2Cresult&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/VwRmqzE">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <p>Kullanımını biraz daha detaylandıracak olursak:
+
+          </p>
+          <p> ⇒  Daha sonra animate() metodu içerisinde animasyon için gerekli olan Css kodlarını yazıyoruz. Bu alanı (parametreler) yazmak zorundayız.
+
+          </p>
+          <p> ⇒  Hız parametresi opsiyoneldir verebiliriz <b>“slow”, “fast”</b> değerlerini alabildiği gibi <b>milisaniye</b> cinsinden de bir değer verebiliyoruz.
+
+          </p>
+          <p> ⇒  Geri dönüş parametresi <b>opsiyoneldir</b> ve animasyon kodlarımız tamamen sonlandıktan sonra çalışmasını istediğimiz kodlar varsa bu kısımda yazıyoruz.
+
+          </p>
+          <p>Şimdi örnek bir uygulama yapalım ve konuyu daha iyi anlamaya çalışalım.
+
+          </p>
+          <p>Örneğimizde 3 farklı animasyon uygulayacağız.
+
+          </p>
+          <p> ⇒  <b>Animasyon-1</b> butonuna tıklandığında seçtiğimiz Html öğesini soldan sağa <b>100px</b> kaydırıp, boyutunu büyültüp son olarak şeffaflığını yarıya düşürelim.
+
+          </p>
+          <p> ⇒  <b>Animasyon-2</b> butonuna her tıklandığında seçtiğimiz Html öğesinin <b>border-radius</b> değerini <b>10%</b> arttırıp yuvarlak hale getirelim.
+
+          </p>
+          <p> ⇒  <b>Animasyon-3</b> butonuna her tıklandığında seçtiğimiz Html öğesini <b>gizle -göster</b> mantığıyla görünür ise gizleyelim, gizliyse görünür hale getirelim.
+
+          </p>
+          <p> ⇒  <b>Başlangıç değerlerine dön</b> butonuna tıklandığında seçtiğimiz Html öğesine uyguladığımız tüm özellikleri kaldırıp başlangıç değerlerine döndürelim.
+
+          </p>
+          <b>Html Kodları
+
+          </b>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/oNVYQdw?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/oNVYQdw">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe><br><br>
+          <b>CSS Kodları</b>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/RwdoqyQ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/RwdoqyQ">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <br><br>
+          <b>JQuery Kodları</b>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/poYNQVM?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/poYNQVM">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <br>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/rNRWQKO?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/rNRWQKO">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <h2>STOP() METODU VE KULLANIMI
+          </h2>
+          <p><b>stop() metodu</b> ise animasyonları veya efektleri tamamlanmadan durdurmak için kullanılır.
+
+          </p>
+          <p>jQuery’de <b>stop()</b> metodunun kullanımı şu şekilde:
+
+          </p>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/LYabXry?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/LYabXry">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <p> ⇒  Burada <b>stopAll</b> parametresi opsiyoneldir ve varsayılan değeri <b>false</b>‘dur.
+
+          </p>
+          <p>Varsayılan değeri ile kullanıldığında sadece etkin animasyonu veya efekti durdurur. Diğer animasyonların ise daha sonra gerçekleşmesine izin verilir.
+
+          </p>
+          <p> ⇒  <b>goToEnd</b> parametresi de opsiyoneldir ve varsayılan değeri <b>false</b>‘dur. Bu şekilde kullanıldığında etkin animasyon veya efekt tamamlanmadan sonlandırılır.
+
+          </p>
+          <p>Şimdi örnek bir uygulama yapalım ve konuyu daha iyi anlamaya çalışalım.
+
+          </p>
+          <p>Uygulamamıza bakacak olursak;
+
+          </p>
+          <p> ⇒  <b>Başlat</b> butonuna tıkladığımızda animasyon başlayacak. Seçtiğimiz Html öğesi soldan sağa, yukarıdan aşağıya, sağdan sola, aşağıdan yukarıya olacak şekilde hareket edip tekrar başlangıç noktasına gelecek. Animasyonun her adımı 3 saniyede gerçekleşecek.
+
+          </p>
+          <p> ⇒  <b>Durdur</b> butonuna tıkladığımızda o an animasyonun hangi adımı gerçekleşiyorsa sadece o adım duracak ve bir sonraki animasyon adımından devam edecek.
+
+          </p>
+          <p> ⇒ <b> Hepsini Durdur</b> butonuna tıkladığımızda tüm animasyonları durdurmuş olacağız.
+
+          </p>
+          <p> ⇒  <b>Animasyonu Tamamla ve Durdur</b> butonuna tıkladığımızda ise o anki animasyon adımını tamamlar ve durur.
+
+          </p>
+          <b>Html Kodları</b>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/OJqbawo?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/OJqbawo">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <b>CSS Kodları</b>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/yLwVQxB?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/yLwVQxB">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <b>JQuery Kodları</b>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/ExMNOeg?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/ExMNOeg">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <p>Butonlara tıklayıp etkilerini incelerseniz daha anlaşılır olacaktır.
+
+          </p>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/mdoOQGL?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/mdoOQGL">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>  
+          <p>Şu yazılar da ilginizi çekebilir.
+
+          </p>
+          <p><b><a href="konu_14.html">jQuery text(), html(), val() Metodları ve Kullanımları</a></b></p>
+          <p><b><a href="konu_1.html">jQuery Nedir? jQuery Ne İşe Yarar? jQuery Kullanımı</a></b></p>
+
+
+
+
+        </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+
+
+                    
+            <h1>JQUERY POSİTİON(), OFFSET() KULLANIMI</h1>
+            <p>Bu yazımızda Jquery de <b> position() ve offset()</b> metodlarının ne işe yaradığını ve nasıl kullanabileceğimizi öğreneceğiz. İki metod da seçmiş olduğumuz etiketin, tarayıcının <b>sol-üst köşesine</b> göre konumunu verir.
+ 
+            </p>
+            <p>Burada etiketin soldan ve üstten kaç px uzaklıkta olduğunu öğrenebiliriz.
+ 
+            </p>
+            <p><b>Kullanımları şu şekilde
+ 
+            </b></p>
+            <br><iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/eYXgmEv?default-tab=js&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/eYXgmEv">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>İkisinin arasındaki farklı daha iyi anlamak adına aynı örnek üzerinde uygulayalım.
+ 
+            </p>
+            <p>Bir div etiketi tanımlayalım ve <b>body ile div</b> etiketlerine şu <b>padding, margin</b> değerlerini verelim.
+ 
+            </p><br>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/abMpzyV?default-tab=css&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/abMpzyV">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>Burada <b>offset metodunu</b> uyguladığımızda div etiketinin margin ve padding değerleride hesaplanır.
+ 
+            </p>
+            <p><b>position metodunda</b> ise div’in margin ve padding değerleri hesaplanmaz. Sadece body etiketinin margin ve padding değerleri hesaplanır.
+ 
+            </p>
+            <p>Örneğin bu uygulamamızda div’in position ve offset değerlerine bakalım.
+ 
+            </p>
+            <p><b>► $(“div”).position().top; değeri 15px
+ 
+            </b></p>
+            <p>(body etiketinin margin-top ve padding-top değerleri toplamı)
+ 
+            </p>
+            <p><b>► $(“div”).position().left; değeri 15px
+ 
+            </b></p>
+            <p>(body etiketinin margin-left ve padding-left değerleri toplamı)
+ 
+            </p>
+            <p><b>► $(“div”).offset().top; değeri 21px
+ 
+            </b></p>
+            <p>(body etiketinin margin-top ve padding-top değerleri ile div etiketinin margin-top değeri toplamı)
+ 
+            </p>
+            <p><b>► $(“div”).offset().left; değeri 23px
+ 
+            </b></p>
+            <p>(body etiketinin margin-left ve padding-left değerleri ile div etiketinin margin-left değeri toplamı)
+ 
+            </p>
+            <p>Uygulama üzerinde değişiklikler yaparsanız daha anlaşılır olacaktır.
+ 
+            </p>
+            <p><b>Kodlarımız şu şekilde
+ 
+            </b></p>
+            <br>
+            <iframe height="400" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/WNmRbZv?default-tab=html%2Cresult&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/WNmRbZv">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>Umarım sizin için faydalı bir yazı olmuştur.
+ 
+            </p>
+            <p>Yeni bir yazımda görüşmek üzere.
+            </p>
+          
+
+
+
+        </div>
+</body>
+</html>

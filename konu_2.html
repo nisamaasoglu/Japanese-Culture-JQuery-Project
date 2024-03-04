@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+
+
+                    
+            <h1>JQUERY DOCUMENT READY FONKSİYONU NEDİR? NASIL KULLANILIR?</h1>
+           <p>
+            Bu yazımızda jQuery’de kullandığımız <b>Document ready fonksiyonu nedir? Document ready fonksiyonu neden kullanılır? Document ready fonksiyonu nasıl kullanılır?</b> sorularının cevabını öğreneceğiz.
+
+
+           </p><br>
+           <h2>JQUERY DOCUMENT READY FONKSİYONU
+        </h2>
+        <p>Şimdi bir örnek üzerinden inceleyerek konuyu daha iyi anlamaya çalışalım.
+        </p>
+    
+        <p><b>⇒  </b>Basit bir Html5 sayfası oluşturup içerisine id’si text olan bir p etiketi oluşturdum.</p>
+        <p><b>⇒  </b>jQuery kullanabilmek için Html sayfasına Google CDN ile jQuery’i ekledim.</p>
+        <p><b>⇒  </b>jQuery kodları ile p etiketinin Css değerleri üzerinde değişiklik yapıp arka plan rengini sarı yapacağız.</p>
+        <b>Html ve jQuery Kodları
+
+        </b>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/OJqbBVN?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/OJqbBVN">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <p>yukarı sağ tarafta kod çıktımızı görüntülüyoruz.</p>
+          <p>Paragrafın arka plan renginin sarı olmasını bekliyorduk ama gördüğünüz gibi paragrafın arka plan rengi değişmedi. 
+
+          </p>
+          <p>Çünkü sayfa görüntülendiğinde öncelikle <b>head</b> etiketinin içerisindeki kodlar yürütülecek ve burada id’si <b>text</b> olan p etiketi üzerinde işlem yapılmaya çalışılacak.
+
+          </p>
+          <p>
+            P etiketi, <b>body</b> etiketleri içerisinde olduğu için henüz yüklenmedi ve bu yüzden erişilemiyor. Tabi doğal olarak arka plan rengi de değiştirilemiyor.
+
+
+          </p>
+
+          <b>Peki bu problemi nasıl çözeceğiz?
+
+          </b>
+          <p>
+            İşte jQuery kodlarımızı document ready fonksiyonu içerisinde yazdığımız zaman şunu demiş oluyoruz.
+
+
+          </p>
+          <p>
+            Burada yazılı kodlar, tüm sayfa yüklendikten sonra çalışsın. Bu şekilde yazdığımız zaman body etiketleri içerisindeki p etiketi de yüklenmiş olacağı için yazdığımız jQuery kodları etkin olacaktır.
+
+
+          </p>
+          <b>jQuery Document Ready Fonksiyonunun Kullanımı
+
+          </b>
+          <br>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/qBvqJdg?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/qBvqJdg">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <p>
+            Yukarıda yapmış olduğumuz örneği şimdi de <b>document ready</b> fonksiyonu ile yapıp sonucu gözlemleyelim.
+
+
+          </p>
+          <b>Html ve jQuery Kodları          </b>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/yLwVRYP?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/yLwVRYP">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <p>Şimdi oluşturduğumuz web sayfasını yan tarafta görüntüleyelim.</p>
+          <p>Gördüğünüz gibi yazmış olduğumuz paragrafın arka plan rengi sarı oldu.
+
+          </p>
+          <p>Son olarak şunu da söyleyelim.
+
+          </p>
+          <p>
+            Document ready fonksiyonunu 2 farklı şekilde kullanabiliriz. Tek farkı ikincisinin biraz daha kısa yazılması. Hangisini kullanmak isterseniz onu kullanabilirsiniz.
+
+
+          </p>
+          <b>Document Ready Fonksiyonunun Uzun Kullanımı
+
+          </b>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/NWJbOxp?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/NWJbOxp">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <br><br>
+          <b>Document Ready Fonksiyonunun Kısa Kullanımı
+
+          </b>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/yLwVRep?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/yLwVRep">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <p>Umarım <b>“jQuery Document Ready Fonksiyonu Nedir? Nasıl Kullanılır?”  </b> başlıklı yazım sizin için faydalı olmuştur.
+
+          </p>
+          <p>
+            Şu yazılar da ilginizi çekebilir
+          </p>
+          <b><a href="https://www.mehsatek.com/javascript-let-nedir/"></a>JavaScript let Nedir?</b>
+          <b><a href="https://www.mehsatek.com/javascript-const-nedir/"></a>JavaScript const Nedir?</b>
+          <p>
+            Yeni bir yazımda görüşmek üzere.
+          </p>
+
+
+
+        </div>
+</body>
+</html>

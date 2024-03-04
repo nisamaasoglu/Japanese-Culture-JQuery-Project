@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+
+
+                    
+            <h1>JQUERY ZİNCİRLEME İŞLEMLER (JQUERY CHAİNİNG)</h1>
+            <p>Bu yazımızda jQuery’de zincirleme işlemlerinin (jQuery chaining) nasıl yapıldığını anlatacağım. jQuery’in zincirleme işlemlere olanak sağlamasıyla bir Html öğesine birden fazla jQuery fonksiyonunu uygulayabiliriz.
+
+            </p>
+            <p>Şimdi zincirleme işlemleri nasıl yapabileceğimize bakalım.
+
+            </p>
+            <h2>JQUERY’DE ZİNCİRLEME İŞLEMLER (JQUERY CHAİNİNG)
+            </h2>
+            <p> ⇒  İlk olarak üzerinde işlem yapacağımız Html öğesini seçmemiz gerekiyor.
+
+            </p>
+            <p>jQuery’de seçiciler ile ilgili eksikleriniz varsa <a href="konu_3.html">jQuery Seçiciler Nasıl Kullanılır?</a> yazımı okuyabilirsiniz.
+
+            </p>
+            <p> ⇒  Html öğesini seçtikten sonra uygulamak istediğimiz fonksiyonları, aralarınab  <b>nokta (.)</b> koyarak arka arkaya yazıyoruz.
+
+            </p>
+            <b>Peki zincirleme işlemlerini kullanmanın bir avantajı var mıdır? Varsa nedir?
+
+            </b>
+            <p>Normalde uygulamak istediğimiz herbir fonksiyon için tekrar tekrar ilgili Html öğesini seçmemiz gerekecekti. Fakat uygulamak istediğimiz fonksiyonları zincirleme yöntemiyle uygularsak ilgili Html öğesini bir defa seçmiş olacağız.
+
+            </p>
+            <p>Konunun daha iyi anlaşılabilmesi için uygulamamıza geçelim.
+
+            </p>
+            <p> ⇒  İlk olarak <b>1 button</b> etiketi verebiliriz <b>1 div</b> etiketi tanımlayalım.
+
+            </p>
+            <p> ⇒  Butona tıklandığında div etiketine sırasıyla şu fonksiyonları uygulayalım:
+
+            </p>
+            <p>1. animate()
+            </p>
+            <p>2.fadeOut()
+            </p>
+            <p>3.fadeIn()
+            </p>
+            <p>4.animate()
+            </p>
+            <b>Html Kodları</b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/vYPyQwj?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/vYPyQwj">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <b>CSS Kodları</b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/GReNwaX?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/GReNwaX">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <b>JQuery Kodları</b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/OJqbaYr?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/OJqbaYr">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>Kodlarınızı yazarken bu şekilde fonksiyonların aralarına <b>nokta (.)</b> koyarak dilediğiniz kadar fonksiyonu uygulayabilirsiniz.
+
+            </p>
+            <p>Uygulamamızın son hali aşağıdaki gibi olacaktır. <b>Click</b>butonuna tıkladığınızda yazmış olduğumuz fonksiyonların arka arkaya uygulandığını görebilirsiniz.
+
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/KKENrjK?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/KKENrjK">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+              <p>Umarım <b>“jQuery Zincirleme İşlemler (jQuery Chaining)”</b> başlıklı yazım sizin için faydalı olmuştur.
+
+              </p>
+              <p>Şu yazılar da ilginizi çekebilir.
+
+              </p>
+              <p><b><a href="konu_12.html">jQuery Callback Fonksiyonu Nedir? Nasıl Kullanılır?</a></b></p>
+              <p>Yeni bir yazımızda görüşmek üzere</p>
+
+
+        </div>
+</body>
+</html>

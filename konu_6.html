@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+            <h1>JQUERY FORM OLAYLARI</h1>
+
+            <p>Bu yazımızda <b>Jquery form olayları</b> yani <b>submit, change, focus ve blur</b> olaylarını örnek uygulamalar üzerinden anlatacağım.
+
+            </p>
+            <p>
+                Olay dediğimiz kavram aslında hepimizin bildiği bir konu. Bir butonun tıklanması, fare ile bir nesnenin üzerine gelinmesi, bir formun doldurulup gönderilmesi, klavyeden bir tuşa basılması, açılır menüden seçim yapılması vb.. gibi aksiyonlar birer olaydır.
+
+
+            </p>
+            <p>
+                Örneklerimizde ilk önce olayın ne olduğundan bahsedip, ilgili örneğin kodlarını paylaşacağım. Yazının sonunda ise bu kodların uygulamasını paylaşacağım. 
+
+
+            </p>
+            <p>
+                Uygulama üzerinde her bir olayı ayrı ayrı incelerseniz daha iyi anlaşılacaktır.
+
+
+            </p>
+            <p>
+                <b style="background-color: blueviolet;">ÖNEMLİ</b> Yazacağınız Jquery kodlarını, 
+
+
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/LYabgrY?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/LYabgrY">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+              <p>
+                içerisinde yazmaya çalışın. Neden bu şekilde yazmamız gerektiği ile ilgili bir yazım bulunuyor. Bunun için <b><a href="konu_2.html">JQuery Document Ready Nedir?</a></b> yazımı okuyabilirsiniz.
+
+
+              </p>
+              <h2>JQUERY FORM OLAYLARI
+            </h2>
+            <h3>1-) JQUERY SUBMİT OLAYI
+            </h3>
+            <p>Bir form üzerindeki gerekli alanların hepsini doldurduktan sonra bu bilgiler üzerinde işlem yapmak için formu submit ederiz. 
+
+            </p>
+            <p><b>Submit olayı</b> formun gönderilmesidir.
+
+            </p>
+            <p>
+                Örneğin id’si <b>submit</b> olan form, Gönder butonuna tıklanarak submit edildiğinde alert ile istediğimiz bir mesajı verelim.
+
+
+            </p>
+            <b>Html ve Jquery Kodları
+
+            </b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/jOJVeKz?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/jOJVeKz">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <h3>2-) JQUERY CHANGE OLAYI
+            </h3>
+            <p><b>Change</b>, bir durumun değişmesi olayıdır. Örneğin id’si <b>change</b> olan bir dropdown listemiz (açılır liste) olsun.
+
+            </p>
+            <p>
+                Listeye <b>İstanbul, Ankara ve İzmir</b> illerini ekleyelim. Listeden herhangi birini seçtiğimizde yani bir değişiklik olduğunda change olayını tetikleyip alert ile istediğimiz bir mesajı verelim.
+
+
+            </p>
+            <b>Html ve Jquery Kodları
+
+            </b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/ExMNdRJ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/ExMNdRJ">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe> 
+              <h3>3-) JQUERY FOCUS VE BLUR OLAYLARI
+            </h3>
+            <p>Bir input öğesi içerisine fare ile tıklayıp odaklanması olayı bir <b>focus</b> olayıdır.
+
+            </p>
+            <p>Fare ile input öğesi dışında bir yere tıklanması ise <b>blur</b> olayıdır.
+
+            </p>
+            <p>Örneğimizde id’si <b>focus-blur</b> olan input’un focus olayında arkaplan rengini #E7512F, blur olayında ise arkaplan rengini #FFFFFF yapalım.
+
+            </p>
+            <b>Html ve Jquery Kodları
+
+            </b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/qBvqJMB?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/qBvqJMB">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+
+              <p>Tüm Jquery form olaylarını tek uygulama üzerinde birleştirdim. Tek tek uygulayarak inceleyebilirsiniz.
+
+              </p>
+
+              <iframe height="500" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/RwdoeYG?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/RwdoeYG">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+              <p>
+                Jquery klavye olayları hakkında daha fazla bilgi almak isterseniz <b><a href="https://api.jquery.com/category/events/">JQuery</a></b> sitesini ziyaret edebilirsiniz.
+    
+    
+              </p>
+              <p>Şu yazılar da ilginizi çekebilir.
+
+              </p>
+              <p><b><a href="konu_4.html">JQuery Fare Olayları</a></b></p>
+              <p><b><a href="konu_5.html">JQuery Klavye Olayları</a></b></p>
+              <p><b><a href="konu_7.html">JQuery Scroll, Select, On, Off, One Olayları</a></b></p>
+              
+              
+              <p>Yeni bir yazımızda görüşmek üzere.
+
+              </p>
+
+
+
+        </div>
+</body>
+</html>

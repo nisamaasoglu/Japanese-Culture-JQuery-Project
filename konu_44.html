@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+            <h1>JQUERY ANİMASYON ÖZELLİĞİNİ AÇMAK VE KAPATMAK</h1>
+            <p>Bu yazımızda jQuery’de animasyon özelliğini nasıl açıp kapatabileceğimizi göstereceğim.
+
+            </p>
+            <p><b>JQuery.fx.off</b> özelliği, tüm animasyonları global olarak devre dışı <b>bırakmak / etkinleştirmek</b> için kullanılır. Varsayılan olarak <b>false</b> değeri alır. Bu şekilde animasyonların normal olarak çalışmasına izin verilir.
+
+            </p>
+            <p>Biz bu değeri <b>true</b> yaparak, tüm animasyonları devre dışı bırakabiliriz. Bu şekilde ayarlandığında animasyonlar, animasyonsuz bir şekilde son halini alırlar.
+
+            </p>
+            <p>İki farklı şekilde kullanabiliriz. Bunlar:
+
+            </p>
+            <iframe height="150" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/GRergmz?default-tab=js&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/GRergmz">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+
+
+
+
+
+            <p> <b style="background-color: blue; color: white;">⇒</b>  Şimdi 1 div etiketi ve 3 button etiketi yazalım.
+
+            </p>
+            <p> <b style="background-color: blue; color: white;">⇒</b> <b>“Animasyonu başlat”</b> butonuna tıklandığında div etiketi için yazmış olduğumuz animasyonu başlatalım. Varsayılan olarak animasyonların çalışmasına izin verildiği için herhangi bir problem yaşamayacağız.</p>  
+            <p> <b style="background-color: blue; color: white;">⇒</b> <b>“Animasyonları devre dışı bırak”</b> butonuna tıklayalım ve sonrasında tekrar <b> “Animasyonu başlat”</b> butonuna tıklayalım.</p>  
+            <p> <b style="background-color: blue; color: white;">⇒</b> Bu sefer yazdığımız animasyon kodları çalışmayacaktır. Çünkü <b>JQuery.fx.off </b> özelliğine true değeri atamış olduk. </p>  
+            <p> <b style="background-color: blue; color: white;">⇒</b><b> Eğer “Animasyonları etkin hale getir”</b> butonuna tıklayarak <b>JQuery.fx.off</b> özelliğine tekrar false değeri atarsak animasyon kodlarımız tekrar çalışacaktır.</p> 
+            <br><p><b>Html Kodları</b></p>
+            <iframe height="250" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/wvOgBdV?default-tab=html&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/wvOgBdV">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe><br><br>
+
+
+
+            <p><b>CSS Kodları</b></p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/ZEPLYyB?default-tab=css&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/ZEPLYyB">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe> <br><br>
+
+
+
+
+            <p><b>JQuery Kodları</b></p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/abMpzwL?default-tab=js&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/abMpzwL">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe><br>
+            <p>Butonlara tıklayarak uygulamamızı inceleyebilirsiniz.
+
+            </p>
+            <br>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/gOEgbRE?default-tab=html%2Cresult&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/gOEgbRE">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>Umarım sizin için faydalı bir yazı olmuştur.
+
+            </p>
+            <p>Şu yazılar da ilginizi çekebilir.
+
+            </p>
+            <p><b><a href="konu_9.html">jQuery fadeOut(), fadeIn(), fadeToggle(), fadeTo() Metodları ve Kullanımları
+
+            </a></b></p>
+            <p><b><a href="konu_17.html">jQuery addClass(), removeClass(), toggleClass() Metodları ve Kullanımları</a>
+
+            </b></p>
+            <p>Yeni bir yazımda görüşmek üzere.
+            </p>
+
+                    
+           
+          
+
+
+
+        </div>
+</body>
+</html>

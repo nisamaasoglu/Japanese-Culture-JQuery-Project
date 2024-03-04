@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+            <h1>JQUERY KLAVYE OLAYLARI</h1>
+            <p>Bu yazımızda Jquery klavye olayları yani keypress, keydown, keyup olaylarını örnek uygulamalar üzerinden anlatacağım.
+
+            </p>
+            <p>Olay dediğimiz kavram aslında hepimizin bildiği bir konu. Bir butonun tıklanması, fare ile bir nesnenin üzerine gelinmesi, bir formun doldurulup gönderilmesi, klavyeden bir tuşa basılması, açılır menüden seçim yapılması vb.. gibi aksiyonlar birer olaydır.
+
+            </p>
+            <p>
+                Örneklerimizde ilk önce olayın ne olduğundan bahsedip, ilgili örneğin kodlarını paylaşacağım. Yazının sonunda ise bu kodların uygulamasını paylaşacağım. 
+
+
+            </p>
+            <p>
+                Uygulama üzerinde her bir olayı ayrı ayrı incelerseniz daha iyi anlaşılacaktır.
+
+
+            </p>
+            <p><b style="background-color: blueviolet;">ÖNEMLİ</b> Yazacağınız Jquery kodlarını, 
+
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/bGZBmYR?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/bGZBmYR">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+              <p>içerisinde yazmaya çalışın. Neden bu şekilde yazmamız gerektiği ile ilgili bir yazım bulunuyor. Bunun için <b><a href="konu_2.html"> JQuery Document Ready Nedir?</a></b> yazımı okuyabilirsiniz.
+
+              </p>  
+              <h2>JQUERY KLAVYE OLAYLARI
+            </h2>
+            <h3>1-) JQUERY KEYPRESS OLAYI
+            </h3>
+            <p><b>keypress</b>, klavyede herhangi bir tuşa basılması olayıdır. Örneğin id’si <b>keypress</b> olan input içerisine focus’lanıp klavyeden bir tuşa basıldığında alert ile istediğimiz bir mesajı verelim.
+
+            </p>
+            <b>Html ve Jquery Kodları
+
+            </b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/RwdoeQa?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/RwdoeQa">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+
+            <h3>2-) JQUERY KEYDOWN OLAYI
+            </h3>
+            <p><b>Keydown</b>, klavyede herhangi bir tuşa ilk basıldığı andır. Örneğin id’si <b>keydown</b> olan input içerisine focus’lanıp klavyeden bir tuşa basıldığında alert ile istediğimiz bir mesajı verelim.
+
+            </p>
+            <b>Html ve Jquery Kodları
+
+            </b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/KKENGQo?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/KKENGQo">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+              <h3>3-) JQUERY KEYUP OLAYI
+            </h3>
+           <p><b>keyup</b>, keydown olayının tersine klavyede herhangi bir tuşa basıldıktan sonra elimizi kaldırdığımız andır.
+
+           </p>
+           <p>Örneğin id’si <b>keyup</b> olan input içerisine focus’lanıp klavyeden bir tuşa uzunca basıldığında en son elimizi kaldırdığımız an için alert ile istediğimiz bir mesajı verelim.
+
+           </p>
+           <b>Html ve Jquery Kodları
+
+           </b>
+           <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/LYabgdP?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/LYabgdP">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <p>Tüm Jquery klavye olaylarını tek uygulama üzerinde birleştirdim. Tek tek uygulayarak inceleyebilirsiniz.
+            <iframe height="500" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/eYXBPLb?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+              See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/eYXBPLb">
+              Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+              on <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+          </p>
+          <p>
+            Jquery klavye olayları hakkında daha fazla bilgi almak isterseniz <b><a href="https://api.jquery.com/category/events/">JQuery</a></b> sitesini ziyaret edebilirsiniz.
+
+
+          </p>
+          <p>Şu yazılar da ilginizi çekebilir.
+
+          </p>
+          <p><b><a href="konu_4.html">JQuery Fare Olayları</a></b></p>
+          <p><b><a href="konu_6.html">JQuery Form Olayları</a></b></p>
+          <p><b><a href="konu_7.html">JQuery Scroll, Select, On, Off, One Olayları</a></b></p>
+          <p>Yeni bir yazımızda görüşmek üzere</p>
+
+          
+
+
+
+        </div>
+</body>
+</html>

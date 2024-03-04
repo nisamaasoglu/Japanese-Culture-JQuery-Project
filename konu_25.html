@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+
+            <h1>JQUERY ATTR(), REMOVEATTR() METODLARI VE KULLANIMLARI</h1>
+            <p>Bu yazımızda jQuery <b>attr()</b> ve <b>removeAttr()</b> metodlarının ne işe yaradığını ve nasıl kullanabileceğimizi öğreneceğiz.
+
+            </p>
+            <p><b>attr()</b> metodu ile seçmiş olduğumuz bir Html etiketinin niteliklerinden birinin değerini alabilir veya bu niteliğe bir değer verebiliriz.
+
+            </p>
+            <p><b>removeAttr()</b> metodu ile seçmiş olduğumuz bir Html etiketinin niteliklerinden istediğimiz birini silebiliriz.
+
+            </p>
+            <p>Şöyle bir uygulama yapalım:
+
+            </p>
+            <p><b style="background-color: blue; color: white;">⇒</b> 1 p etiketi yazalım ve <b>style</b> niteliğine bazı Css özellikleri ekleyelim.</p>
+            <p><b style="background-color: blue; color: white;">⇒</b> 1 a etiketi yazalım ve <b> href</b> niteliğine <b>“https://www.google.com.tr/” </b> yazalım.</p>
+            <p><b style="background-color: blue; color: white;">⇒</b> Son olarak 3 buton oluşturalım.</p>
+            <p><b style="background-color: blue; color: white;">⇒</b> Birinci butona tıklandığında <b>attr()</b> metodu ile <b>a</b> etiketinin <b>href</b> niteliğinin değerini alert mesajı ile gösterelim.</p>
+            <p><b style="background-color: blue; color: white;">⇒</b> İkinci butona tıklandığında <b>attr()</b> metodu ile <b>a</b> etiketinin <b>href</b> niteliğinin değerini <b>“https://www.yandex.com.tr/”</b> ile değiştirelim.</p>
+            <p><b style="background-color: blue; color: white;">⇒</b> Üçüncü butona tıklandığında <b>removeAttr()</b> metodu ile <b>p</b> etiketinin <b>style</b> niteliğini silelim.</p>
+            <br>
+            <b>Html Kodları</b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/bGZgbNw?default-tab=html&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/bGZgbNw">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+
+
+              <br><br>
+            <p><b>CSS Kodları</b></p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/VwRPZYO?default-tab=css&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/VwRPZYO">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+
+
+
+              <br><br>
+            <p><b>JQuery Kodları</b></p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/WNmRevR?default-tab=js&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/WNmRevR">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+
+
+            <p>Butonlara tıklarken tarayıcınızda sağ tıklayıp <b>incele</b> derseniz Html etiketleri üzerindeki değişiklikleri inceleyerek daha iyi anlayabilirsiniz.
+
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/JjzEPde?default-tab=html%2Cresult&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/JjzEPde">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+
+            <p><b>attr()</b> metodu ile bir niteliğe birden fazla değer eklemek isterseniz şu şekilde yapabilirsiniz:
+
+            </p>
+            <p>Örneğin id’si <b>link</b> olan bir <b>a</b> etiketinin <b>href</b> niteliğinin değerine, <b>“https://www.google.com/”</b> ve <b>title</b> niteliğinin değerine <b>“Google”</b> verelim.
+
+            </p>
+            <iframe height="200" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/qBvRWdL?default-tab=js&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/qBvRWdL">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>Umarım <b>“jQuery attr(), removeAttr() Metodları ve Kullanımları”</b> başlıklı yazım sizin için faydalı olmuştur.
+
+            </p>
+            <p>Şu yazılar da ilginizi çekebilir.
+
+            </p>
+            <p><b><a href="konu_16.html">jQuery remove() Metodu ve Kullanımı</a></b></p>
+            <p><b><a href="konu_18.html">jQuery css() Metodu ve Kullanımı</a></b></p>
+
+            <p>Yeni bir yazımda görüşmek üzere.
+
+            </p>
+          
+
+
+
+        </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+
+            <h1>JQUERY DATA(), REMOVEDATA() METODLARI VE KULLANIMLARI</h1>
+            <p>Bu yazımızda jQuery <b> data()</b> ve <b>removeData()</b> metodlarının ne işe yaradığını ve nasıl kullanabileceğimizi öğreneceğiz.
+
+            </p>
+            <p><b>data()</b> metodu ile seçmiş olduğumuz bir Html etiketinin istediğimiz data niteliğinin değerini alabilir veya data niteliğine bir değer verebiliriz.
+
+            </p>
+            <p><b>removeData()</b> metodu ile seçmiş olduğumuz bir Html etiketinin istediğimiz data niteliğinin değerini silebiliriz.
+
+            </p>
+            <p>İlk olarak <b>data()</b> metodunun kullanımına bakalım. Html etiketlerinde data niteliğini şu şekilde kullanıyoruz:
+
+            </p>
+            <iframe height="150" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/ZEPBgga?default-tab=html&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/ZEPBgga">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p><b style="background-color: blue; color: white;">⇒</b>  <b>data-</b>  yazdıktan sonra istediğimiz ismi verebiliyoruz. Burada <b>id</b> ismini verdim. Siz isterseniz ahmet, mehmet gibi isimler bile verebilirsiniz.</p>
+            <p><b style="background-color: blue; color: white;">⇒</b>  Sonrasında a etiketinin <b>id</b> isimli data niteliğine <b>5</b> değerini verdim. Artık istediğimiz zaman bu değeri kullanabiliriz.</p>
+            <p>Genelde <b> data()</b> metodunu Ajax ile silme işlemlerini gerçekleştirirken kullanıyorum. Örneğin bir ürün silmek istiyorsam data niteliğine ürünün id’sini verip silme metodunun içerisinde jQuery kodlarıyla id’yi tekrar alıp silme işlemini gerçekleştirebiliyorum.
+
+            </p>
+            <p>Şimdi bir örnek üzerinde konuyu daha iyi anlamaya çalışalım.
+
+            </p>
+            <p><b style="background-color: blue; color: white;">⇒</b> 1 tane <b>Delete</b> butonu yazalım.</p>
+            <p><b style="background-color: blue; color: white;">⇒</b> <b>“Data”</b> butonuna tıklandığında Delete butonunun <b>data-product</b> niteliğindeki değeri alert ile gösterelim.</p>
+            <p><b style="background-color: blue; color: white;">⇒</b> <b>“Data Set”</b> butonuna tıklandığında Delete butonunun <b>data-product</b> niteliğine <b>Computer</b> değerini verelim.</p>
+            <p><b style="background-color: blue; color: white;">⇒</b> <b>“Data Remove”</b> butonuna tıklandığında Delete butonunun <b>data-product</b> niteliğini silelim.</p>
+            <p><b style="background-color: blue; color: white;">⇒</b> <b>“Data Object Set”</b> butonuna tıklandığında Delete butonunun data niteliğine bir <b>nesne</b> atayalım.</p>
+            <p><b style="background-color: blue; color: white;">⇒</b> <b>“Data Object”</b> butonuna tıklandığında Delete butonunun data niteliğine atamış olduğumuz nesneyi alert mesajı ile gösterelim.</p>
+            <br><b>Html Kodları</b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/GRerKKR?default-tab=html&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/GRerKKR">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+
+
+            <br> <br> <b>CSS Kodları</b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/zYbNOOj?default-tab=css&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/zYbNOOj">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+
+            <br><br>
+            <b>JQuery Kodları</b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/YzgNKKb?default-tab=js&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/YzgNKKb">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+
+
+
+            <p>Butonlara tıklarken tarayıcınızda sağ tıklayıp <b>incele</b> derseniz <b>Delete</b> butonu üzerindeki değişiklikleri inceleyerek daha iyi anlayabilirsiniz.
+
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/KKEaPKm?default-tab=html%2Cresult&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/KKEaPKm">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>Umarım <b> “jQuery data(), removeData() Metodları ve Kullanımları”</b> başlıklı yazım sizin için faydalı olmuştur.
+
+            </p>
+            <p>Şu yazılar da ilginizi çekebilir.
+
+            </p>
+            <p><a href="konu_11.html">jQuery animate(), stop() Metodları ve Kullanımları</a></p>
+            <p><a href="konu_35.html">jQuery delay() Metodu ve Kullanımı</a></p>
+            
+            <p>Yeni bir yazımda görüşmek üzere.
+
+            </p>
+          
+
+
+
+        </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+
+
+          <h1>JQUERY FİLTER() METODU VE KULLANIMI</h1>
+          <p>Bu yazımızda jQuery <b>filter()</b> metodunun ne işe yaradığını ve nasıl kullanabileceğimizi öğreneceğiz.
+
+          </p>
+          <p><b>filter()</b> metodu ile Html öğeleri içerisinde filtreleme işlemlerini yapabiliriz. Bu filtreleme işlemlerini seçicileri kullanarak yapabildiğimiz gibi fonksiyonları kullanarak da yapabiliyoruz.
+
+          </p>
+          <p><b>filter()</b> metodunun her iki kullanımını da birer örnek üzerinden inceleyelim.
+
+          </p>
+          <p>İlk olarak <b>filter()</b> metodunu seçiciler ile birlikte kullanalım.
+
+          </p>
+          <p><b style="background-color: blue; color: white;">⇒</b>  4 tane p etiketi yazalım.</p>
+          <p><b style="background-color: blue; color: white;">⇒</b>  2 tane p etiketinin class’ına custom yazalım.</p>
+          <p><b style="background-color: blue; color: white;">⇒</b>  Butona tıklandığında class’ı custom olanları filtreleyelim ve arkaplan rengini açık mavi yapalım.</p>
+          <b>Html Kodları
+
+          </b>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/GReNPbR?default-tab=html&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/GReNPbR">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe><br><br>
+
+          <b>CSS Kodları</b>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/WNmoLqo?default-tab=css%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/WNmoLqo">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <br><br>
+          <b>jQuery Kodları
+
+          </b>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/rNRWoEJ?default-tab=js%2Cresult&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/rNRWoEJ">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <p>Butona tıkladığınızda class’ı <b>custom</b> olan <b>p</b> etiketlerinin arkaplan renklerinin değiştiğini görebilirsiniz.
+
+          </p>
+          <iframe height="400" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/LYabMKM?default-tab=html%2Cresult&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/LYabMKM">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <p>Şimdi de <b>filter()</b> metodunu bir fonksiyon ile birlikte kullanalım.
+
+          </p>
+          <p><b style="background-color: blue; color: white;">⇒</b>  4 tane liste oluşturalım.</p>
+          <p><b style="background-color: blue; color: white;">⇒</b>  Butona tıklandığında 2 elemanlı olan listelerin yazı rengini <b>kırmızı</b>, font büyüklüğünü <b>24px</b> yapalım.</p>
+          <b>HTML Kodları</b>
+          <iframe height="400" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/yLwVGmo?default-tab=html&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/yLwVGmo">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <br><br>
+          <b>CSS Kodları</b>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/ExMNGqp?default-tab=css&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/ExMNGqp">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <br><br>
+          <b>jQuery Kodları
+
+          </b>
+          <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/xxBRmvy?default-tab=js&editable=true&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/xxBRmvy">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <br>
+          <p>Butona tıkladığınızda 2 elemanlı olan listelerin yazı renginin kırmızı, yazı font büyüklüğünün 24px olarak değiştiğini görebilirsiniz.
+
+          </p> <br><br>
+          <iframe height="400" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/VwRmqoO?default-tab=html%2Cresult&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/VwRmqoO">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+          <p>
+            Şu yazılar da ilginizi çekebilir.
+
+
+          </p>
+          <p><b><a href="konu_11.html">jQuery animate(), stop() Metodları ve Kullanımları</a></b></p>
+          <p><b><a href="konu_10.html">jQuery slideDown(), slideUp(), slideToggle() Metodları ve Kullanımları</a></b></p>
+          <p>Yeni bir yazımızda görüşmek üzere.
+
+          </p>
+        </div>
+</body>
+</html>

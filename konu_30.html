@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+
+
+                    
+            <h1>JQUERY WRAP(), WRAPALL(), UNWRAP(), WRAPINNER() KULLANIMI</h1>
+            <p>Bu yazımızda <b>wrap, wrapAll, unwrap ve wrapInner</b> metodlarının ne işe yaradığını ve nasıl kullanabileceğimizi öğreneceğiz.
+
+            </p>
+            <p><b>wrap metodu</b> ile seçmiş olduğumuz bir etiketi başka bir etiket içerisine alabiliriz.
+
+            </p>
+            <p>Örneğin şu şekilde 2 tane p etiketimiz olsun.
+
+            </p>
+            <iframe height="200" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/XWGprex?default-tab=html&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/XWGprex">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>wrap metodu ile bu p etiketlerini div etiketi içerisine almak istersek şu şekilde yazmamız yeterli
+
+            </p>
+            <iframe height="200" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/oNVBvGK?default-tab=js&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/oNVBvGK">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+
+            <p>Artık p etiketlerini ayrı ayrı div etiketi içerisine almış olduk.
+
+            </p>
+            <iframe height="200" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/dyrNbJy?default-tab=html&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/dyrNbJy">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>Ayrı ayrı değilde ikisini birden tek div içerisine almak istersek <b>wrapAll metodunu</b> kullanmamız lazım.
+
+            </p>
+            <p>
+                <b>Kullanımı şu şekilde
+    
+                </b></p><br>
+            <iframe height="150" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/PoLWYEb?default-tab=js&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/PoLWYEb">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>Artık p etiketlerini tek div içerisine almış olduk.
+
+            </p>
+            <iframe height="200" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/eYXgOyL?default-tab=html&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/eYXgOyL">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p><b>unwrap metodu</b>, seçmiş olduğumuz etiketin ebeveyn etiketini siler.
+
+            </p>
+            <p>Örneğin bir div etiketi ve içerisinde p etiketi olsun.
+
+            </p>
+            <iframe height="150" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/VwRPZQY?default-tab=html&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/VwRPZQY">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>p etiketinin ebeveyn etiketini yani div etiketini silmek için;
+
+            </p>
+            <iframe height="150" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/yLwgBvj?default-tab=js&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/yLwgBvj">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>şeklinde yazabiliriz.
+
+            </p>
+            <p>Böylece sadece p etiketi kalmış olacak.
+
+            </p>
+            <p>Son olarak <b>wrapInner metodu</b> ise seçmiş olduğumuz etiketin içerisine yeni etiketler eklememizi sağlar.
+
+            </p>
+            <p>Örneğin bir p etiketimiz olsun.
+
+            </p>
+            <iframe height="150" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/qBvRWxz?default-tab=html&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/qBvRWxz">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p><b>wrapInner metodu</b> ile bu p etiketi içerisine bir <b> b etiketi</b>, onun da içerisine bir <b> i etiketi</b> yerleştirelim.
+
+            </p>
+            <iframe height="150" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/QWodLmO?default-tab=js&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/QWodLmO">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>Artık p etiketi içerisindeki yazımız hem kalın hemde italik oldu.
+
+            </p>
+            <iframe height="250" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/rNRjBdQ?default-tab=html&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/rNRjBdQ">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>Umarım sizin için faydalı bir yazı olmuştur.
+
+            </p>
+            <p>Yeni bir yazımda görüşmek üzere.
+
+            </p>
+
+
+
+        </div>
+</body>
+</html>

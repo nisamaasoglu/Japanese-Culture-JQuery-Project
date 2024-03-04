@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+
+
+            <h1>JQUERY DELAY() METODU VE KULLANIMI</h1>
+            <p>Bu yazımda jQuery <b>delay()</b> metodunun ne işe yaradığını ve nasıl kullanabileceğimizi anlatacağım.
+
+            </p>
+            <p>Şimdi delay() metodunun ne işe yaradığını ve nasıl kullanıldığını inceleyelim. Daha sonra da bu metodu kullanarak küçük bir uygulama yapalım. 
+
+            </p>
+            <p>
+               <b> delay() metodu</b> ile yapmak istediğimiz bazı işlemleri belirlediğimiz süre kadar geç başlatabiliriz. Örneğin bir animasyonun 2 saniye geç başlaması veya bir butona tıklandığında yapılacak işlemlerin belirli bir süre geç başlaması vb.
+
+
+            </p><br>
+            <h2>JQUERY DELAY() METODUNUN KULLANIMI
+            </h2> 
+            <p>
+                Parametre olarak <b>milisaniye</b> türünden bir değer veriyoruz. 
+
+
+            </p>
+            <iframe height="150" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/poYRvpb?default-tab=js&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/bbozkurt/pen/poYRvpb">
+                Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+              <p>Kullanımını gördüğümüze göre artık bir örnek üzerinde uygulayalım.
+
+                  </p>
+                  <p>Örneğimizde bir <b>div</b> ve bir <b>button</b> oluşturalım. Butona tıklandıktan sonra sırasıyla şu işlemleri gerçekleştirelim.
+
+                  </p>
+                <p><b style="background-color: blue; color: white;">⇒  </b> Div’in <b>genişlik</b> ve <b>yükseklik</b> değerini <b>50px</b> yapıp, <b>border-radius</b> özelliğine <b>50% </b>değeri vererek tam yuvarlak hale getirelim.</p>
+                <p><b style="background-color: blue; color: white;">⇒  </b>Sonra <b>delay()</b> metodu ile <b>3 saniye</b> bekletip ardından <b>fadeOut()</b> metodu ile div’i gizleyelim.</p>
+                <p><b style="background-color: blue; color: white;">⇒  </b>Sonra <b>delay()</b> metodu ile <b>3 saniye</b> bekletip ardından <b>fadeIn()</b> metodu ile gizlemiş olduğumuz div’i görünür hale getirelim.</p>
+                <p><b style="background-color: blue; color: white;">⇒  </b>Son olarak yine <b>delay()</b> metodu ile <b>3 saniye</b> bekletip ardından div’i varsayılan Css değerlerine döndürelim.</p>
+                <br>
+                <p><b>Html Kodları</b></p>
+                <br><iframe height="150" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/OJqWPzK?default-tab=html&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href="https://codepen.io/bbozkurt/pen/OJqWPzK">
+                    Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                    on <a href="https://codepen.io">CodePen</a>.
+                  </iframe>
+                  <br>
+                  <p><b>CSS Kodları</b></p><br>
+                  <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/poYRvaE?default-tab=css&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href="https://codepen.io/bbozkurt/pen/poYRvaE">
+                    Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                    on <a href="https://codepen.io">CodePen</a>.
+                  </iframe><br><br>
+                  <p><b>jQuery Kodları</b></p>
+                  <br>
+                  <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/zYbNxRE?default-tab=js&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href="https://codepen.io/bbozkurt/pen/zYbNxRE">
+                    Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                    on <a href="https://codepen.io">CodePen</a>.
+                  </iframe>
+                  <br>
+                  <p>Butona tıklayarak div’e uygulanacak efektleri ve animasyonları inceleyebilirsiniz.
+
+                  </p>
+                  <br>
+                  <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/bbozkurt/embed/dyrNPdq?default-tab=html%2Cresult&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href="https://codepen.io/bbozkurt/pen/dyrNPdq">
+                    Untitled</a> by Yusuf Bozkurt (<a href="https://codepen.io/bbozkurt">@bbozkurt</a>)
+                    on <a href="https://codepen.io">CodePen</a>.
+                  </iframe>
+
+                  <p>Umarım <b>“jQuery delay() Metodu ve Kullanımı”</b> başlıklı yazım sizin için faydalı olmuştur.
+
+                  </p>
+                  <p>Şu yazılar da ilginizi çekebilir.
+
+                  </p>
+                  <p><b><a href="konu_9.html">Query fadeOut(), fadeIn(), fadeToggle(), fadeTo() Fonksiyonları ve Kullanımları</a></b></p>
+                  <p><b><a href="konu_10.html">jQuery slideDown(), slideUp(), slideToggle() Fonksiyonları ve Kullanımları</a></b></p>
+                  <p>Yeni bir yazımda görüşmek üzere.
+
+                  </p>
+
+          
+
+
+
+        </div>
+</body>
+</html>

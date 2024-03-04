@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+
+
+                    
+        <h1>JQUERY HİDE(), SHOW(), TOGGLE() METODLARI VE KULLANIMLARI</h1>
+        <p>Bu yazımızda jQuery’de <b>hide, show ve toggle</b> fonksiyonları ile Html öğelerini nasıl gizleyebilir ve tekrardan nasıl görünür hale getirebiliriz onu öğreneceğiz.
+
+        </p>
+        <p>Şimdi sırasıyla bu fonksiyonların ne işe yaradığını ve nasıl kullanıldığını inceleyelim.
+
+        </p>
+        <p>Daha sonra da tüm fonksiyonları aynı anda içeren bir uygulama yapalım. Böylece fonksiyonların birbirinden farkını daha iyi anlayabiliriz.
+
+        </p>
+        <h2>JQUERY HİDE() FONKSİYONU
+        </h2>
+        <p><b>hide() fonksiyonu</b> : Bir Html öğesini gizlememizi sağlar. 3 farklı kullanım şekli vardır:
+
+        </p>
+        <p> <b style="background-color: blue; color: white;">1 -</b> Herhangi bir parametre vermeden yani <b>hide()</b> şeklinde kullanırsak bu fonksiyonu uyguladığımız Html öğesi bir efekt uygulanmadan çok hızlı bir şekilde gizli durumuna geçer.
+
+        </p>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/YzgpRKp?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/YzgpRKp">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        <p>  <b style="background-color: blue; color: white;">2 -</b> <b>Milisaniye</b> türünden parametre verebiliriz. Örneğin Html öğesinin gizlenme süresinin <b>3 saniyede</b> gerçekleşmesini istiyorsak parametre olarak <b>3000</b> değeri vermeliyiz.
+
+        </p>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/jOJVQNv?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/jOJVQNv">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+        </iframe>
+        <p> <b style="background-color: blue; color: white;">3 -</b>  Son olarak rakamsal değer vermek yerine <b> “slow”, “normal”, “fast”</b> parametrelerinden birini vererek efektlerimizi yavaş, normal veya hızlı bir şekilde gerçekleştirebiliriz.
+
+        </p>
+        <p>Örneğin yavaş bir efekt vermek istiyorsak:
+
+        </p>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/MWxbzgL?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/MWxbzgL">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        <h2>JQUERY SHOW() FONKSİYONU
+        </h2>
+        <p><b>show() fonksiyonu</b> : Gizli durumda olan bir Html öğesini tekrardan görünür hale getirmemizi sağlar. 3 farklı kullanım şekli vardır:
+
+        </p>
+        <p><b style="background-color: blue; color: white;">1 -</b> Herhangi bir parametre vermeden yani <b>show()</b> şeklinde kullanırsak bu fonksiyonu uyguladığımız Html öğesi bir efekt uygulanmadan çok hızlı bir şekilde görünür durumuna geçer.
+
+        </p>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/WNmoYNy?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/WNmoYNy">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        <p> <b style="background-color: blue; color: white;">2 -</b> <b>Milisaniye</b> türünden parametre verebiliriz. Örneğin Html öğesinin gizlenme süresinin <b>3 saniyede</b> gerçekleşmesini istiyorsak parametre olarak <b>3000</b> değeri vermeliyiz.
+
+        </p>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/VwRmVvm?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/VwRmVvm">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        <p><b style="background-color: blue; color: white;">3 -</b> Son olarak rakamsal değer vermek yerine <b> “slow”, “normal”, “fast”</b> parametrelerinden birini vererek efektlerimizi yavaş, normal veya hızlı bir şekilde gerçekleştirebiliriz.
+
+        </p>
+        <p>Örneğin yavaş bir efekt vermek istiyorsak:
+
+        </p>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/wvOoQKm?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/wvOoQKm">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        <h2>JQUERY TOGGLE() FONKSİYONU
+        </h2>
+        <p><b>toggle() fonksiyonu</b> : Html öğesi görünür durumdaysa gizlemeyi, gizli durumdaysa görünür hale getirmemizi sağlar. Yani <b>Gizle-Göster, Göster-Gizle</b> işlevi görür. 3 farklı kullanım şekli vardır:
+
+        </p>
+        <p> <b style="background-color: blue; color: white;"> 1-</b>  Herhangi bir parametre vermeden yani <b>toggle()</b> şeklinde kullanırsak bu fonksiyonu uyguladığımız Html öğesi bir efekt uygulanmadan çok hızlı bir şekilde <b>gizli – görünür / görünür – gizli</b> durumuna geçer.
+
+        </p>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/LYabXpN?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/LYabXpN">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        <p> <b style="background-color: blue; color: white;">2 -</b><b>Milisaniye</b> türünden parametre verebiliriz. Örneğin Html öğesinin gizlenme süresinin <b>3 saniyede</b> gerçekleşmesini istiyorsak parametre olarak <b>3000</b> değeri vermeliyiz.
+
+        </p>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/MWxbzaR?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/MWxbzaR">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        <p><b style="background-color: blue; color: white;">3 -</b>  Son olarak rakamsal değer vermek yerine <b> “slow”, “normal”, “fast”</b> parametrelerinden birini vererek efektlerimizi yavaş, normal veya hızlı bir şekilde gerçekleştirebiliriz.
+
+        </p>
+        <p>Örneğin yavaş bir efekt vermek istiyorsak:
+  
+        </p>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/abMBQdO?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/abMBQdO">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        <p>Artık bu fonksiyonları içerisinde barındıran uygulamamıza geçebiliriz.
+
+        </p>
+        <b>Html Kodları
+
+        </b>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/dyrOQGO?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/dyrOQGO">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        <b>CSS Kodları</b>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/GReNwoM?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/GReNwoM">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+        </iframe>
+        <b>JQuery Kodları</b>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/OJqbaMQ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/OJqbaMQ">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+        </iframe>
+        <p>Gördüğünüz gibi hide, show ve toggle fonksiyonlarını 3 farklı şekilde kullandık. Aşağıdaki uygulama üzerinde butonlara tıklayarak efektleri inceleyebilirsiniz.
+
+        </p>
+        <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/jOJVQWQ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+            See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/jOJVQWQ">
+            Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+            on <a href="https://codepen.io">CodePen</a>.
+          </iframe>
+        <b>Son olarak şunu söylemek istiyorum:
+
+        </b>
+        <p>Bu fonksiyonların arka planda neler yaptığını bilmemizde de fayda var.
+
+        </p>
+        <p>Burada <b>div</b> etiketi gizlendiğinde tarayıcıda sağ tıklayıp incele derseniz, div’in <b>display değerinin</b> none olarak değiştiğini görebilirsiniz.
+
+        </p>
+        <p><b> ⇒  Div Hala Görünüyorken      </b></p>
+        
+        <img src="resimler/jquery-efektleri-display-block.jpg" alt="">
+        <br>
+        <p><b> ⇒  Div Gizli Hale Geldiğinde</b></p>
+        <img src="resimler/jquery-efektleri-display-none.jpg" alt="">
+        <p>Umarım <b>“jQuery hide(), show(), toggle() Fonksiyonları ve Kullanımları”</b> başlıklı yazım sizin için faydalı olmuştur.
+
+        </p>
+        <p><b><a href="konu_9.html">jQuery fadeOut(), fadeIn(), fadeToggle(), fadeTo() Metodları ve Kullanımları</a></b></p>
+        <p><b><a href="konu_10.html">jQuery slideDown(), slideUp(), slideToggle() Metodları ve Kullanımları</a></b></p>
+        <p>Yeni bir yazımda görüşmek üzere.
+
+        </p>
+
+        
+        
+
+
+          
+
+
+
+        </div>
+</body>
+</html>

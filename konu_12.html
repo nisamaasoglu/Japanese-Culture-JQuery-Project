@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derleyici Editörü</title>
+    <link rel="stylesheet" href="library/css/dersler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+  
+</head>
+
+<body>
+        <div class="ana">
+
+
+                    
+            <h1>JQUERY CALLBACK FONKSİYONU NEDİR? NASIL KULLANILIR?</h1>
+            <p>Bu yazımızda jQuery’de <b>Callback fonksiyonu nedir? Nasıl kullanılır?</b> uygulamalı örnekler üzerinden öğreneceğiz.
+
+            </p>
+            <p>Bildiğiniz gibi jQuery’de birçok efekt fonksiyonu bulunuyor. İşte callback fonksiyonu, o an aktif olan efektin tamamen bitmesinden sonra çalışan fonksiyondur.
+
+            </p>
+            <p>JavaScript’te kodlar satır satır ilerleyerek çalışır. Örneğin 3 saniye sürecek bir efekt kodu yazdınız diyelim. Bu efektin bitmesi beklenmeden bir sonraki satırdaki kodlar çalıştırılır. Bu durum bazen hatalara neden olabilir.
+
+            </p>
+            <p>Eğer efektin tamamen bitmesinden sonra diğer kodlarınızın çalışmasını istiyorsanız bu kodları <b>callback fonksiyonu</b> içerisinde yazmalısınız.
+
+            </p>
+            <p>Konunun daha iyi anlaşılabilmesi için şöyle bir örnek yapalım.
+
+            </p>
+            <p> ⇒  1 div etiketi ve 2 button etiketi oluşturalım.
+
+            </p>
+            <p> ⇒  Butonların click olaylarında div’e <b>toggle</b> fonksiyonu ile 3 saniyede gerçekleşecek şekilde <b>gizle – göster</b> efekti verelim.
+
+            </p>
+            <p> ⇒  Birinci butona tıklandığında gerçekleşecek olan efekt tamamen bittikten sonra yani callback fonksiyonu içerisinde <b>alert</b> ile bir uyarı mesajı verdirelim.
+
+            </p>
+            <p> ⇒  İkinci butona tıklandığında ise alert mesajını callback fonksiyonu olmadan verdirelim.
+
+            </p>
+            <p> ⇒  İlk butona tıklandığında gerçekleşecek olan efekt tamamen bittikten sonra yazdığımız alert mesajı gösterilecek. İkinci butona tıklandığında ise alert mesajı gösterildikten sonra efekt devam edecek.
+
+            </p>
+            <p>Artık jQuery callback fonksiyonunun kullanımına bir uygulama üzerinden bakalım.
+
+            </p>
+            <b>Html Kodları</b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/ZEPBmZQ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/ZEPBmZQ">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <b>CSS Kodları</b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/abMBQxJ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/abMBQxJ">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <b>JQuery Kodları</b>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/VwRmVNQ?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/VwRmVNQ">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+            <p>Uygulamamızın son hali aşağıdaki gibi olacaktır.
+
+            </p>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/mehmetdogan-dev/embed/vYPyQMj?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/mehmetdogan-dev/pen/vYPyQMj">
+                Untitled</a> by Mehmet (<a href="https://codepen.io/mehmetdogan-dev">@mehmetdogan-dev</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+              <p>Umarım <b>“jQuery Callback Fonksiyonu Nedir? Nasıl Kullanılır?”</b> başlıklı yazım sizin için faydalı olmuştur.
+
+              </p>
+              <p>Şu yazılar da ilginizi çekebilir.
+
+              </p>
+              <p><b><a href="konu_2.html">jQuery Document Ready Fonksiyonu Nedir? Nasıl Kullanılır?</a></b></p>
+              <p>Yeni bir yazımızda görüşmek üzere.
+
+              </p>
+          
+
+
+
+        </div>
+</body>
+</html>
